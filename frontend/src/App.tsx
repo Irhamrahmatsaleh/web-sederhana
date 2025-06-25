@@ -1,17 +1,13 @@
 
-import { Routes, Route } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-// Nanti tambahkan import untuk Login, Register, dll
+import './App.css'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      {/* <Route path="/login" element={<Login />} /> */}
-      {/* <Route path="/register" element={<Register />} /> */}
-      {/* Tambahkan route lain nanti */}
-    </Routes>
-  );
+    <div>
+      <h1>Website Sederhana - Proyek Baru.</h1>
+      <p>Siap untuk fitur login & register</p>
+    </div>
+  )
 }
 
 export default App;
