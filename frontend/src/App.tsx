@@ -1,15 +1,14 @@
-
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Register from "./pages/Register";
 
 function App() {
-
-
   return (
-    <div>
-      <h1>Website Sederhana - Proyek Baru.</h1>
-      <p>Siap untuk fitur login & register</p>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
